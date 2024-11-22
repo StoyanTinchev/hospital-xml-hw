@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root Element -->
+    <xsd:element name="Hospital">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Patients" type="PatientsType" maxOccurs="unbounded"/>
+                <xsd:element name="Procedures" type="ProceduresType" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Patients Group -->
+    <xsd:complexType name="PatientsType">
+        <xsd:sequence>
+            <xsd:element name="Patient" type="PatientType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="PatientType">
+        <xsd:sequence>
+            <xsd:element name="PatientID" type="xsd:string"/>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Age" type="xsd:integer"/>
+            <xsd:element name="MedicalHistory" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="Procedures" type="PatientProceduresType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="PatientProceduresType">
+        <xsd:sequence>
+            <xsd:element name="ProcedureID" type="xsd:string"/>
+            <xsd:element name="ProcedureDate" type="xsd:date"/>
+            <xsd:element name="ProcedureName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Procedures Group -->
+    <xsd:complexType name="ProceduresType">
+        <xsd:sequence>
+            <xsd:element name="Procedure" type="ProcedureType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ProcedureType">
+        <xsd:sequence>
+            <xsd:element name="ProcedureID" type="xsd:string"/>
+            <xsd:element name="ProcedureName" type="xsd:string"/>
+            <xsd:element name="Doctor" type="DoctorType"/>
+            <xsd:element name="Results" type="ResultsType" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Doctor Information -->
+    <xsd:complexType name="DoctorType">
+        <xsd:sequence>
+            <xsd:element name="DoctorID" type="xsd:string"/>
+            <xsd:element name="DoctorName" type="xsd:string"/>
+            <xsd:element name="Specialty" type="xsd:string"/>
+            <xsd:element name="YearsOfExperience" type="xsd:integer"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Procedure Results -->
+    <xsd:complexType name="ResultsType">
+        <xsd:sequence>
+            <xsd:element name="Evaluation" type="xsd:string"/>
+            <xsd:element name="Complications" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="Images" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

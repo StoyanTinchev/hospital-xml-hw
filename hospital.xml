@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital>
+    <Patients>
+        <Patient>
+            <PatientID>P001</PatientID>
+            <Name>Иван Иванов</Name>
+            <Age>35</Age>
+            <MedicalHistory>Алергия към пеницилин</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR001</ProcedureID>
+                <ProcedureDate>2024-01-15</ProcedureDate>
+                <ProcedureName>Ринопластика</ProcedureName>
+            </Procedures>
+            <Procedures>
+                <ProcedureID>PR002</ProcedureID>
+                <ProcedureDate>2024-06-20</ProcedureDate>
+                <ProcedureName>Увеличаване на устни</ProcedureName>
+            </Procedures>
+        </Patient>
+        <Patient>
+            <PatientID>P002</PatientID>
+            <Name>Мария Петрова</Name>
+            <Age>29</Age>
+            <MedicalHistory>Няма хронични заболявания</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR003</ProcedureID>
+                <ProcedureDate>2024-02-10</ProcedureDate>
+                <ProcedureName>Липосукция</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR001</ProcedureID>
+            <ProcedureName>Ринопластика</ProcedureName>
+            <Doctor>
+                <DoctorID>D001</DoctorID>
+                <DoctorName>Д-р Георги Василев</DoctorName>
+                <Specialty>Оториноларингология</Specialty>
+                <YearsOfExperience>15</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Успешна процедура</Evaluation>
+                <Complications>Няма</Complications>
+                <Images>before_after_rhinoplasty.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR002</ProcedureID>
+            <ProcedureName>Увеличаване на устни</ProcedureName>
+            <Doctor>
+                <DoctorID>D002</DoctorID>
+                <DoctorName>Д-р Елена Стоянова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>10</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Отличен резултат</Evaluation>
+                <Complications>Лека подпухналост</Complications>
+                <Images>lip_augmentation.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR003</ProcedureID>
+            <ProcedureName>Липосукция</ProcedureName>
+            <Doctor>
+                <DoctorID>D001</DoctorID>
+                <DoctorName>Д-р Георги Василев</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>15</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Процедурата премина успешно</Evaluation>
+                <Complications>Синини</Complications>
+                <Images>liposuction.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>

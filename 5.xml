@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <Patients>
+        <Patient>
+            <PatientID>P050</PatientID>
+            <Name>Антон Василев</Name>
+            <Age>39</Age>
+            <MedicalHistory>Повишено кръвно налягане</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR050</ProcedureID>
+                <ProcedureDate>2027-04-10</ProcedureDate>
+                <ProcedureName>Лифтинг на лице</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR050</ProcedureID>
+            <ProcedureName>Лифтинг на лице</ProcedureName>
+            <Doctor>
+                <DoctorID>D050</DoctorID>
+                <DoctorName>Д-р Стефан Михайлов</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>14</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Отличен резултат, подобрена еластичност</Evaluation>
+                <Complications>Лека болезненост</Complications>
+                <Images>facelift.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>

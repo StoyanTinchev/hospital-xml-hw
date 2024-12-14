@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <Patients>
+        <Patient>
+            <PatientID>P040</PatientID>
+            <Name>Станислав Колев</Name>
+            <Age>42</Age>
+            <MedicalHistory>Без значими заболявания</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR040</ProcedureID>
+                <ProcedureDate>2026-07-23</ProcedureDate>
+                <ProcedureName>Лазерно премахване на бръчки</ProcedureName>
+            </Procedures>
+        </Patient>
+        <Patient>
+            <PatientID>P041</PatientID>
+            <Name>Юлия Георгиева</Name>
+            <Age>37</Age>
+            <MedicalHistory>Алергия към латекс</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR041</ProcedureID>
+                <ProcedureDate>2026-08-01</ProcedureDate>
+                <ProcedureName>Повдигане на вежди</ProcedureName>
+            </Procedures>
+            <Procedures>
+                <ProcedureID>PR042</ProcedureID>
+                <ProcedureDate>2026-08-10</ProcedureDate>
+                <ProcedureName>Контуриране на устна линия</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR040</ProcedureID>
+            <ProcedureName>Лазерно премахване на бръчки</ProcedureName>
+            <Doctor>
+                <DoctorID>D040</DoctorID>
+                <DoctorName>Д-р Иванка Стойчева</DoctorName>
+                <Specialty>Дерматология</Specialty>
+                <YearsOfExperience>11</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Значително изглаждане на кожата</Evaluation>
+                <Complications>Леко парене</Complications>
+                <Images>wrinkle_laser_removal.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR041</ProcedureID>
+            <ProcedureName>Повдигане на вежди</ProcedureName>
+            <Doctor>
+                <DoctorID>D030</DoctorID>
+                <DoctorName>Д-р Радостина Петрова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>9</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>По-отворен и младежки поглед</Evaluation>
+                <Complications>Минимални синини</Complications>
+                <Images>brow_lift.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR042</ProcedureID>
+            <ProcedureName>Контуриране на устна линия</ProcedureName>
+            <Doctor>
+                <DoctorID>D040</DoctorID>
+                <DoctorName>Д-р Иванка Стойчева</DoctorName>
+                <Specialty>Дерматология</Specialty>
+                <YearsOfExperience>11</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>По-изразени устни</Evaluation>
+                <Complications>Лека подутина</Complications>
+                <Images>lip_line_contouring.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>

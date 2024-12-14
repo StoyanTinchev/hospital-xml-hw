@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <Patients>
+        <Patient>
+            <PatientID>P010</PatientID>
+            <Name>Георги Маринов</Name>
+            <Age>40</Age>
+            <MedicalHistory>Лека форма на хипертония</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR010</ProcedureID>
+                <ProcedureDate>2025-03-10</ProcedureDate>
+                <ProcedureName>Корекция на клепачи</ProcedureName>
+            </Procedures>
+        </Patient>
+        <Patient>
+            <PatientID>P011</PatientID>
+            <Name>Силвия Димитрова</Name>
+            <Age>27</Age>
+            <MedicalHistory>Няма хронични заболявания</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR011</ProcedureID>
+                <ProcedureDate>2025-05-22</ProcedureDate>
+                <ProcedureName>Подмладяваща лицева процедура</ProcedureName>
+            </Procedures>
+            <Procedures>
+                <ProcedureID>PR012</ProcedureID>
+                <ProcedureDate>2025-06-10</ProcedureDate>
+                <ProcedureName>Премахване на бенки</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR010</ProcedureID>
+            <ProcedureName>Корекция на клепачи</ProcedureName>
+            <Doctor>
+                <DoctorID>D010</DoctorID>
+                <DoctorName>Д-р Петър Петров</DoctorName>
+                <Specialty>Офталмология</Specialty>
+                <YearsOfExperience>8</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Много добър козметичен резултат</Evaluation>
+                <Complications>Лека сухота в очите</Complications>
+                <Images>eyelid_correction.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR011</ProcedureID>
+            <ProcedureName>Подмладяваща лицева процедура</ProcedureName>
+            <Doctor>
+                <DoctorID>D011</DoctorID>
+                <DoctorName>Д-р Мария Костова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>12</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Подобрена еластичност на кожата</Evaluation>
+                <Complications>Лека зачервеност</Complications>
+                <Images>face_rejuvenation.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR012</ProcedureID>
+            <ProcedureName>Премахване на бенки</ProcedureName>
+            <Doctor>
+                <DoctorID>D011</DoctorID>
+                <DoctorName>Д-р Мария Костова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>12</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Успешно премахване без белези</Evaluation>
+                <Complications>Няма</Complications>
+                <Images>moles_removal.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>

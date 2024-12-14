@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM XML Генерация</title>
+    <script>
+        function generateXML() {
+            let doc = document.implementation.createDocument("", "", null);
+
+            let hospital = doc.createElement("Hospital");
+            doc.appendChild(hospital);
+
+            let patients = doc.createElement("Patients");
+            hospital.appendChild(patients);
+
+            let patient = doc.createElement("Patient");
+            patients.appendChild(patient);
+
+            let pid = doc.createElement("PatientID");
+            pid.textContent = "P050";
+            patient.appendChild(pid);
+
+            let name = doc.createElement("Name");
+            name.textContent = "Антон Василев";
+            patient.appendChild(name);
+
+            let age = doc.createElement("Age");
+            age.textContent = "39";
+            patient.appendChild(age);
+
+            let mh = doc.createElement("MedicalHistory");
+            mh.textContent = "Повишено кръвно налягане";
+            patient.appendChild(mh);
+
+            let pProcedures = doc.createElement("Procedures");
+            patient.appendChild(pProcedures);
+
+            let pProcID = doc.createElement("ProcedureID");
+            pProcID.textContent = "PR050";
+            pProcedures.appendChild(pProcID);
+
+            let pProcDate = doc.createElement("ProcedureDate");
+            pProcDate.textContent = "2027-04-10";
+            pProcedures.appendChild(pProcDate);
+
+            let pProcName = doc.createElement("ProcedureName");
+            pProcName.textContent = "Лифтинг на лице";
+            pProcedures.appendChild(pProcName);
+
+            let procedures = doc.createElement("Procedures");
+            hospital.appendChild(procedures);
+
+            let procedure = doc.createElement("Procedure");
+            procedures.appendChild(procedure);
+
+            let procID = doc.createElement("ProcedureID");
+            procID.textContent = "PR050";
+            procedure.appendChild(procID);
+
+            let procName = doc.createElement("ProcedureName");
+            procName.textContent = "Лифтинг на лице";
+            procedure.appendChild(procName);
+
+            let doctor = doc.createElement("Doctor");
+            procedure.appendChild(doctor);
+
+            let dID = doc.createElement("DoctorID");
+            dID.textContent = "D050";
+            doctor.appendChild(dID);
+
+            let dName = doc.createElement("DoctorName");
+            dName.textContent = "Д-р Стефан Михайлов";
+            doctor.appendChild(dName);
+
+            let specialty = doc.createElement("Specialty");
+            specialty.textContent = "Пластична хирургия";
+            doctor.appendChild(specialty);
+
+            let years = doc.createElement("YearsOfExperience");
+            years.textContent = "14";
+            doctor.appendChild(years);
+
+            let results = doc.createElement("Results");
+            procedure.appendChild(results);
+
+            let evalEl = doc.createElement("Evaluation");
+            evalEl.textContent = "Отличен резултат, подобрена еластичност";
+            results.appendChild(evalEl);
+
+            let comp = doc.createElement("Complications");
+            comp.textContent = "Лека болезненост";
+            results.appendChild(comp);
+
+            let img = doc.createElement("Images");
+            img.textContent = "facelift.jpg";
+            results.appendChild(img);
+
+            let serializer = new XMLSerializer();
+            let xmlStr = serializer.serializeToString(doc);
+            console.log(xmlStr);
+
+            let pre = document.createElement("pre");
+            pre.textContent = xmlStr;
+            document.body.appendChild(pre);
+        }
+
+        window.onload = generateXML;
+    </script>
+</head>
+<body>
+<h1>Генериране на XML чрез DOM</h1>
+<p>Отворете конзолата за да видите XML или прегледайте съдържанието по-долу.</p>
+</body>
+</html>

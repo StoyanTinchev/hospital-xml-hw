@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <Patients>
+        <Patient>
+            <PatientID>P030</PatientID>
+            <Name>Михаела Стоянова</Name>
+            <Age>50</Age>
+            <MedicalHistory>Хронична астма</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR030</ProcedureID>
+                <ProcedureDate>2026-01-11</ProcedureDate>
+                <ProcedureName>Повдигане на скули</ProcedureName>
+            </Procedures>
+        </Patient>
+        <Patient>
+            <PatientID>P031</PatientID>
+            <Name>Николай Иванов</Name>
+            <Age>28</Age>
+            <MedicalHistory>Без значими заболявания</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR031</ProcedureID>
+                <ProcedureDate>2026-03-02</ProcedureDate>
+                <ProcedureName>Изправяне на носна преграда</ProcedureName>
+            </Procedures>
+            <Procedures>
+                <ProcedureID>PR032</ProcedureID>
+                <ProcedureDate>2026-03-15</ProcedureDate>
+                <ProcedureName>Подмладяване на шия</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR030</ProcedureID>
+            <ProcedureName>Повдигане на скули</ProcedureName>
+            <Doctor>
+                <DoctorID>D030</DoctorID>
+                <DoctorName>Д-р Радостина Петрова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>9</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>По-изразени скули</Evaluation>
+                <Complications>Лека болка</Complications>
+                <Images>cheek_lift.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR031</ProcedureID>
+            <ProcedureName>Изправяне на носна преграда</ProcedureName>
+            <Doctor>
+                <DoctorID>D001</DoctorID>
+                <DoctorName>Д-р Георги Василев</DoctorName>
+                <Specialty>Оториноларингология</Specialty>
+                <YearsOfExperience>15</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Подобрено дишане</Evaluation>
+                <Complications>Лека кръвоизливност</Complications>
+                <Images>septum_correction.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR032</ProcedureID>
+            <ProcedureName>Подмладяване на шия</ProcedureName>
+            <Doctor>
+                <DoctorID>D030</DoctorID>
+                <DoctorName>Д-р Радостина Петрова</DoctorName>
+                <Specialty>Пластична хирургия</Specialty>
+                <YearsOfExperience>9</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>По-гладка кожа</Evaluation>
+                <Complications>Няма</Complications>
+                <Images>neck_rejuvenation.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>

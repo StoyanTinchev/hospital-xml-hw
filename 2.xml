@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <Patients>
+        <Patient>
+            <PatientID>P020</PatientID>
+            <Name>Радослав Попов</Name>
+            <Age>45</Age>
+            <MedicalHistory>Диабет тип 2</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR020</ProcedureID>
+                <ProcedureDate>2025-04-05</ProcedureDate>
+                <ProcedureName>Корекция на белези от акне</ProcedureName>
+            </Procedures>
+        </Patient>
+        <Patient>
+            <PatientID>P021</PatientID>
+            <Name>Елена Христова</Name>
+            <Age>33</Age>
+            <MedicalHistory>Лека мигрена</MedicalHistory>
+            <Procedures>
+                <ProcedureID>PR021</ProcedureID>
+                <ProcedureDate>2025-09-01</ProcedureDate>
+                <ProcedureName>Поставяне на филъри</ProcedureName>
+            </Procedures>
+            <Procedures>
+                <ProcedureID>PR022</ProcedureID>
+                <ProcedureDate>2025-09-10</ProcedureDate>
+                <ProcedureName>Премахване на мастни натрупвания по брадичката</ProcedureName>
+            </Procedures>
+        </Patient>
+    </Patients>
+    <Procedures>
+        <Procedure>
+            <ProcedureID>PR020</ProcedureID>
+            <ProcedureName>Корекция на белези от акне</ProcedureName>
+            <Doctor>
+                <DoctorID>D020</DoctorID>
+                <DoctorName>Д-р Васил Георгиев</DoctorName>
+                <Specialty>Дерматология</Specialty>
+                <YearsOfExperience>10</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Намаляване на видимостта на белезите</Evaluation>
+                <Complications>Няма</Complications>
+                <Images>acne_scars_removal.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR021</ProcedureID>
+            <ProcedureName>Поставяне на филъри</ProcedureName>
+            <Doctor>
+                <DoctorID>D021</DoctorID>
+                <DoctorName>Д-р Десислава Йорданова</DoctorName>
+                <Specialty>Естетична медицина</Specialty>
+                <YearsOfExperience>7</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>Изразен контур на лицето</Evaluation>
+                <Complications>Леко подуване</Complications>
+                <Images>fillers.jpg</Images>
+            </Results>
+        </Procedure>
+        <Procedure>
+            <ProcedureID>PR022</ProcedureID>
+            <ProcedureName>Премахване на мастни натрупвания по брадичката</ProcedureName>
+            <Doctor>
+                <DoctorID>D021</DoctorID>
+                <DoctorName>Д-р Десислава Йорданова</DoctorName>
+                <Specialty>Естетична медицина</Specialty>
+                <YearsOfExperience>7</YearsOfExperience>
+            </Doctor>
+            <Results>
+                <Evaluation>По-изявен профил</Evaluation>
+                <Complications>Няма</Complications>
+                <Images>chin_fat_removal.jpg</Images>
+            </Results>
+        </Procedure>
+    </Procedures>
+</Hospital>
